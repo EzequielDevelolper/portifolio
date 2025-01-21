@@ -36,6 +36,10 @@ p, h1{
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
 }
 
 /* PARTE MAIN */
@@ -94,12 +98,9 @@ p, h1{
     aspect-ratio: 1/1.2;
     object-fit: cover;
     object-position: top;
-    z-index: 2;
 }
 
-.img-pessoal{
-    position: relative;
-}
+
 
 h1{
 
