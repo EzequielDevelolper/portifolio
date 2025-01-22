@@ -6,30 +6,21 @@
 } */
 
 *{
-    position: 0;
     margin: 0;
     padding: 0;
  }
 body{
+    height: 100vh;
     background-color: black;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(147, 155, 155);
-    cursor: pointer;
-    font-size: 19pt;
 
-}
 
 p, h1{
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
     color: white ;
 }
-
-
-
 .navbar{
     padding: 1rem;
     display: flex;
@@ -38,8 +29,22 @@ p, h1{
     gap: 10rem;
     position: fixed;
     top: 0;
-    left: 50%;
-    right: 50%;
+    left: 0;
+    right: 0;
+}
+.navbar-item{
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color:  rgb(60, 128, 255);
+    cursor: pointer;
+    font-weight:700;
+    font-size: 16pt;
+
+}
+
+.navbar-item:hover{
+    color: white;
 }
 
 /* PARTE MAIN */
