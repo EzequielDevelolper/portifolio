@@ -5,24 +5,29 @@
     --preto:black;
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
- }
-body{
+}
+
+body {
     height: 100vh;
     background-color: black;
 }
 
+hr {
+    margin: 3rem 10rem 3rem 10rem ;
+}
 
-
-p, h1{
+p,
+h1 {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
-    color: white ;
+    color: white;
 }
-.navbar{
-    padding: 1rem;
+
+.navbar {
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,50 +36,54 @@ p, h1{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;;
 }
-.navbar-item{
+
+.navbar-item {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
     text-decoration: none;
-    color:  rgb(60, 128, 255);
+    color: rgb(60, 128, 255);
     cursor: pointer;
-    font-weight:700;
+    font-weight: 700;
     font-size: 16pt;
 
 }
 
-.navbar-item:hover{
+.navbar-item:hover {
     color: white;
 }
 
 /* PARTE MAIN */
 .main {
-    margin-top: 10rem;
+    margin-top: 12rem;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 15rem;
 }
 
-.texto-apresentação{
+.texto-apresentação {
     text-align: justify;
     margin-right: 15rem;
 }
 
-.titulo{
+.titulo {
     font-size: 40pt;
     font-weight: bold;
 }
 
-.subtitulo{
+.subtitulo {
     color: rgb(60, 128, 255);
     font-size: 19pt;
     font-weight: 400;
 }
-.hello{
-    color:rgb(60, 128, 255);
+
+.hello {
+    color: rgb(60, 128, 255);
 }
 
-.btn-lestgo{
+.btn-lestgo {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-size: medium;
@@ -82,24 +91,24 @@ p, h1{
     height: 3rem;
     width: 12rem;
     color: white;
-    background-color :  rgb(0, 109, 252 ) ;
+    background-color: rgb(0, 109, 252);
     border: none;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
-.btn-lestgo:hover{
-    
+.btn-lestgo:hover {
+
     background-color: black;
-    border: 1px solid rgb(0, 109, 252 ) ;
+    border: 1px solid rgb(0, 109, 252);
     transition: 0.2s;
 }
 
 .img-perfil {
     width: 100%;
-    max-width: 350px;
-    border-radius: 40% 25% 40% 25%  ;
+    max-width: 21rem;
+    border-radius: 40% 25% 40% 25%;
     aspect-ratio: 1/1.2;
     object-fit: cover;
     object-position: top;
@@ -107,10 +116,10 @@ p, h1{
 
 
 
-h1{
+h1 {
 
-width: 40rem;
-} 
+    width: 40rem;
+}
 
 h1::after {
     content: '|';
@@ -118,13 +127,71 @@ h1::after {
     margin-left: 5px;
     display: inline-block;
     animation: blink .7s infinite;
-  }
+}
 
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
     }
+
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sobre {
+    position: relative;
+}
+
+.img-sobre-perfil {
+    position: relative;
+    width: 100%;
+    max-width: 21rem;
+    border-radius: 40% 25% 40% 25%;
+    aspect-ratio: 1/1.2;
+    right: 1.7rem;
+    object-fit: cover;
+    bottom: 4rem;
+}
+
+.img-sobre-line {
+    width: 100%;
+    max-width: 22rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 40% 25% 40% 25%;
+    aspect-ratio: 1.2/1.7;
+    object-fit: cover;
+    right: 6rem;
+    position: absolute;
+    bottom: 0.3rem;
+    transform: rotate(347deg)
+}
+
+.conteudo-sobre{
+    display: flex;
+    justify-content:center ;
+    align-items: start;
+    gap: 10rem;
+    margin-bottom: 7rem;
+}
+
+.info-sobre{
+    font-size: 16pt;
+    width: 43%;
+}
+
+.Portfolio{
+    display: flex;
+    justify-content: center;
+}
